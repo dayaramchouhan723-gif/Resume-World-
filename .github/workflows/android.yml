@@ -1,0 +1,49 @@
+name: Build APK
+on: [push, workflow_dispatch]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.3.1'
+      - name: Fix gradlew and debug.keystore
+        run: |
+          if [ ! -f ./gradlew ]; then
+            echo "Creating wrapper"
+            gradle wrapper
+          fi
+          chmod +x ./gradlew
+          if [ ! -f ./debug.keystore ]; then
+            keytool -genkeypair -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+          fi
+          ls -la
+      - name: Build APK
+        run: ./gradlew assembleDebug --stacktrace -PgeminiKey=dummy_key_for_github_only
+        env:
+          GEMINI_API_KEY: dummy_key_for_github_only
+      - name: Upload APK
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: APK-FINAL
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: warn
+      - name: Release APK
+        if: success()
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v3.0-FINAL-${{ github.run_number }}
+          name: FINAL Build ${{ github.run_number }} - Design by Dayaram
+          files: app/build/outputs/apk/debug/*.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,6 @@
+{
+  "name": "ResumeBuilder ATS Optimizer",
+  "description": "Privacy-first single-column Resume Builder and ATS Keyword & Readability Score Checker — Design by Dayaram Chouhan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
