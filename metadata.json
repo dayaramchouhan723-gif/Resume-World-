@@ -1,6 +1,6 @@
 {
-  "name": "ResumeBuilder ATS Optimizer",
-  "description": "Privacy-first single-column Resume Builder and ATS Keyword & Readability Score Checker — Design by Dayaram Chouhan.",
+  "name": "SANAM AI",
+  "description": "SANAM AI v7.0 - AI Assistant, Voice Mode, Neural Lens & Auto Job Apply System.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

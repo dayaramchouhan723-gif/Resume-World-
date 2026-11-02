@@ -22,6 +22,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "Resume & ATS Checker"
+rootProject.name = "SANAM Job Assistant"
 
 include(":app")

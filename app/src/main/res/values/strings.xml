@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">ResumeBuilder ATS Optimizer</string>
+    <string name="app_name">SANAM AI</string>
     <string name="developer_name">Design by Dayaram Chouhan</string>
-    <string name="header_title">ResumeBuilder ATS Optimizer</string>
-    <string name="header_developer_subtitle">ResumeBuilder ATS Optimizer - Design by Dayaram Chouhan</string>
-    <string name="header_subtitle">Build a clean single-column resume, then match it with a job description. 100% on-device privacy.</string>
+    <string name="header_title">SANAM AI</string>
+    <string name="header_developer_subtitle">SANAM AI - Voice AI Assistant • Design by Dayaram Chouhan</string>
+    <string name="header_subtitle">Boli se Resume, Voice se Naukri</string>
     <string name="about_designed_by">Designed &amp; Developed by Dayaram Chouhan ❤️</string>
-    <string name="about_ats_optimized">ATS Optimized for Pakistan &amp; India Jobs</string>
-    <string name="pdf_footer_credit">Created with ResumeBuilder - Design by Dayaram Chouhan</string>
+    <string name="about_ats_optimized">ATS Optimized for Overseas Jobs (Canada / Australia / NZ)</string>
+    <string name="pdf_footer_credit">Created with SANAM - Design by Dayaram Chouhan</string>
     <string name="tab_build">Build resume</string>
     <string name="tab_match">Match with Job</string>
     <string name="tab_saved">Drafts</string>
@@ -26,7 +26,7 @@
     <string name="label_job_bullets">What you did (Urdu, Hindi, Roman Urdu, or English — add real numbers)</string>
     <string name="btn_rewrite_ai">Rewrite in English with AI</string>
     <string name="btn_undo_ai">Undo AI</string>
-    <string name="ai_privacy_note">Privacy: Only Job Title + \"What you did\" text is sent to Gemini AI. Your name, phone, and email are NEVER sent. AI only translates what you wrote and never adds unmentioned certificates.</string>
+    <string name="ai_privacy_note">Privacy: Only Job Title + "What you did" text is sent to Gemini AI. Your name, phone, and email are NEVER sent. AI only translates what you wrote and never adds unmentioned certificates.</string>
     <string name="label_education">Education (one per line: diploma, school, year)</string>
     <string name="label_skills">Skills (separate with commas — only list skills you truly have)</string>
     <string name="label_certificates">Certificates (one per line — NEVER list certificates you do not hold)</string>

@@ -2,35 +2,42 @@ package com.example.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-// Light Palette matching the original HTML CSS variables:
-// --bg:#F4F7F3; --card:#fff; --tx:#14211B; --mut:#5A6B63; --ln:#DCE5DF; --ac:#0F7B5F; --on:#fff; --ok:#0F7B5F; --wn:#A86A0A; --bd:#C0392B;
+// SANAM Theme Colors (Sanam Girl - Boli se Resume, Voice se Naukri)
+val SanamPink = Color(0xFFFF2092)
+val SanamCyan = Color(0xFF00E5FF)
+val SanamPurple = Color(0xFF9B5CFF)
+val SanamBg = Color(0xFF080812)
+val SanamPanel = Color(0xFF151526)
+val SanamGreen = Color(0xFF00C853)
+val SanamRed = Color(0xFFD50000)
+
+// Light Palette
 val LightBg = Color(0xFFF4F7F3)
 val LightCard = Color(0xFFFFFFFF)
 val LightText = Color(0xFF14211B)
 val LightMuted = Color(0xFF5A6B63)
 val LightLine = Color(0xFFDCE5DF)
-val LightAccent = Color(0xFF0F7B5F)
+val LightAccent = Color(0xFFFF2092)
 val LightOnAccent = Color(0xFFFFFFFF)
-val LightOk = Color(0xFF0F7B5F)
+val LightOk = Color(0xFF00C853)
 val LightWarn = Color(0xFFA86A0A)
-val LightBad = Color(0xFFC0392B)
+val LightBad = Color(0xFFD50000)
 val LightSurfaceVariant = Color(0xFFE7EFEA)
 
-// Dark Palette matching the original HTML CSS variables:
-// --bg:#0E1613; --card:#16221D; --tx:#E6F0EA; --mut:#93A69C; --ln:#273832; --ac:#3DD6A3; --on:#08130F; --ok:#3DD6A3; --wn:#F0B34A; --bd:#FF7A6B;
-val DarkBg = Color(0xFF0E1613)
-val DarkCard = Color(0xFF16221D)
-val DarkText = Color(0xFFE6F0EA)
-val DarkMuted = Color(0xFF93A69C)
-val DarkLine = Color(0xFF273832)
-val DarkAccent = Color(0xFF3DD6A3)
-val DarkOnAccent = Color(0xFF08130F)
-val DarkOk = Color(0xFF3DD6A3)
-val DarkWarn = Color(0xFFF0B34A)
-val DarkBad = Color(0xFFFF7A6B)
-val DarkSurfaceVariant = Color(0xFF1E2E28)
+// Dark Palette
+val DarkBg = SanamBg
+val DarkCard = SanamPanel
+val DarkText = Color(0xFFFFFFFF)
+val DarkMuted = Color(0xFFA0A0C0)
+val DarkLine = Color(0xFF282845)
+val DarkAccent = SanamPink
+val DarkOnAccent = Color(0xFFFFFFFF)
+val DarkOk = SanamGreen
+val DarkWarn = Color(0xFFFFB300)
+val DarkBad = SanamRed
+val DarkSurfaceVariant = Color(0xFF1F1F38)
 
-// Paper Preview Colors (always crisp white paper with dark ink like a printed PDF)
+// Paper Preview Colors
 val PaperBg = Color(0xFFFFFFFF)
 val PaperText = Color(0xFF111111)
 val PaperSubText = Color(0xFF333333)
